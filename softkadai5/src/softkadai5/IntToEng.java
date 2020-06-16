@@ -6,18 +6,20 @@ public class IntToEng {
     // メインメソッド
     public static void main(String[] args) {
     	//とりあえず１００回できる
+
     	for (int i = 1; i <= 100; i++) {
     	Scanner sc = new Scanner(System.in);
+
+
         System.out.print("数字を入力してください: ");
         int input = sc.nextInt();
-        //IntToEng sh1 = new IntToEng();
-        //IntToEng sh2 = new IntToEng();
-        //IntToEng shT = new IntToEng();
         System.out.println(translateEng(input));
     	}
     }
+    
 
     // 数値を英訳する変換するメソッド
+
     static String translateEng(int n) {
     	 IntToEng sh1 = new IntToEng();
          IntToEng sh2 = new IntToEng();
@@ -34,11 +36,14 @@ public class IntToEng {
 		}
 
     	return a;
-    }//メソッドを呼ぶ
+    }
     	//一番目の人（じま）1~10までの範囲の出力
+
     
-    public String show1 (int n) {
     
+    public String show1(int n) {
+   
+
     	String no = "";
     	  switch (n) {
     	   case 0: break;
@@ -54,6 +59,7 @@ public class IntToEng {
     	   case 10: no = "ten"; break;
     	  }
     	  return no;
+
     }
     
     //２桁の取扱い
@@ -91,8 +97,17 @@ public class IntToEng {
     	}
     
     	return no;
-    }
+
     	
+  
+    }
 }
-	 
-  	
+	
+    	
+    
+    
+    	    
+    
+    	    
+    		
+    		
