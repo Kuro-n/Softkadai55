@@ -8,11 +8,8 @@ public class IntToEng {
     	//とりあえず１００回できる
 
     	for (int i = 1; i <= 100; i++) {
-    	Scanner sc = new Scanner(System.in);
-
-
-        System.out.print("数字を入力してください: ");
-        int input = sc.nextInt();
+    	System.out.print("数字を入力してください: ");
+        int input = new Scanner(System.in).nextInt();
         System.out.println(translateEng(input));
     	}
     }
@@ -25,16 +22,22 @@ public class IntToEng {
          IntToEng sh2 = new IntToEng();
          IntToEng shT = new IntToEng();
 		String a=null;
-         if (n/ 10 == 0) {
+		if(n== 0) {
+			a= "zero";
+		}else if(n == 10) {
+			a = "ten";
+		}else if (n/ 10 == 0) {
 			a=sh1.show1(n);
 		} else if (n / 10 == 1) {
 			a=shT.showTeen(n);
 		} else if (n / 10 > 1 && n/10 <= 9) {
 			a=sh2.show2(n) + " "+ sh1.show1(n%10);
-		} else if (n/ 10 >= 10 && n/10 <= 90) {
+		} else if(n%100 == 0){
+			a=sh1.show1(n/100) + " handred";
+		}else if (n/ 10 >= 10 && n/10 <= 99) {
+		
 			a=sh1.show1(n / 100) + " hundred and "+ sh2.show2(n%100) + " " + sh1.show1(n%10);
 		}
-
     	return a;
     }
     	//一番目の人（じま）1~10までの範囲の出力
@@ -56,7 +59,7 @@ public class IntToEng {
     	   case 7: no = "seven"; break;
     	   case 8: no = "eight"; break;
     	   case 9: no = "nine"; break;
-    	   case 10: no = "ten"; break;
+    	   //case 10: no = "ten"; break;
     	  }
     	  return no;
 
