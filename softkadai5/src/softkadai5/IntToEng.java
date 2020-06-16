@@ -28,8 +28,31 @@ public class IntToEng {
     	   case 9: no = "nine"; break;
     	   case 10: no = "ten"; break;
     	  }
-    	  return no;
+    	  //return no;
+    //}
+    
+    //２桁の取扱い
+    
+    if(n>10) {
+    	
+    	 switch (n%10) {
+			
+    	 	case 0: break;
+			case 1: no = "eleven"; break;
+			case 2: no = "twelve"; break;
+			case 3: no = "thirteen"; break;
+			case 4: no = "fourteen"; break;
+			case 5: no = "fifteen"; break;
+			case 6: no = "sixteen"; break;
+			case 7: no = "seventeen"; break;
+			case 8: no = "eighteen"; break;
+			case 9: no = "nineteen"; break;
+			
+    	}
     }
+    	return no;
+    }
+    	
 }
-    	 
+	 
   	
