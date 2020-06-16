@@ -17,7 +17,8 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     public static String translateEng(int n) {
-    	
+    	String a = "3";
+    	return a;
     	
     	//一番目の人（じま）1~10までの範囲の出力
     }
