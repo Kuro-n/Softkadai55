@@ -19,8 +19,6 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-    	//String str = numEntry.getText();
-		//String n = Integer.parseInt(n);
     	 IntToEng sh1 = new IntToEng();
          IntToEng sh2 = new IntToEng();
          IntToEng shT = new IntToEng();
